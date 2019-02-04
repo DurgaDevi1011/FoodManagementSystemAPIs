@@ -4,13 +4,13 @@ var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 var OrderSchema = new Schema({
-    date: Date,
-    time: String,
-    name: String,
-    amount: Number,
-    items: [{ type: Schema.ObjectId, ref: 'Order' }],
-    itemcount: Number,
-    user: { type: Schema.ObjectId, ref: 'User' }
+    Date: Date,
+    Time: String,
+    Name: String,
+    Amount: Number,
+    Items: [{ type: Schema.ObjectId, ref: 'Order' }],
+    ItemCount: Number,
+    User: { type: Schema.ObjectId, ref: 'User' }
 },
     {
         timestamps: true
